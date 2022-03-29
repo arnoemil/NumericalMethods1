@@ -1,0 +1,570 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Viikko 10 teht&auml;v&auml;t</title><meta name="generator" content="MATLAB 9.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2022-03-17"><meta name="DC.source" content="Viikko10.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Viikko 10 teht&auml;v&auml;t</h1><!--introduction--><div><ul><li>Harjoitus 1</li><li>Arno T&ouml;r&ouml;</li></ul></div><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Teht&auml;v&auml; 1</a></li><li><a href="#2">Teht&auml;v&auml; 2</a></li><li><a href="#3">Teht&auml;v&auml; 3</a></li><li><a href="#4">Teht&auml;v&auml; 4</a></li><li><a href="#5">Teht&auml;v&auml; 5</a></li><li><a href="#6">Teht&auml;v&auml; 6</a></li><li><a href="#7">Teht&auml;v&auml; 6 funktiot</a></li><li><a href="#8">Teht&auml;v&auml; 7</a></li></ul></div><h2 id="1">Teht&auml;v&auml; 1</h2><p>Piirret&auml;&auml;n funktiot</p><p><img src="Viikko10_eq00818200890835308839.png" alt="$cos(2x)$"> ja <img src="Viikko10_eq02333733612996394197.png" alt="$sin(x/2)$"></p><p>samaan kuvaan eri v&auml;reill&auml;. K&auml;ytet&auml;&auml;n for-looppia luomaan k&auml;yrille merkkej&auml; haluttuihin kohtiin.</p><pre class="codeinput">clc;clear;close <span class="string">all</span>
+<span class="comment">% a.) kohta</span>
+
+<span class="comment">% m&auml;&auml;ritet&auml;&auml;n funktiot ja x</span>
+x = -6*pi:.1:4*pi;
+y1 = cos(2*x);
+y2 = sin(x/2);
+
+figure(1);
+
+hold <span class="string">on</span>;
+plot(x, y1);
+plot(x, y2);
+
+<span class="comment">% b.) kohta</span>
+<span class="keyword">for</span> x = -18:12
+    plot(x, cos(2*x), <span class="string">'r*'</span>);
+    plot(x, sin(x/2), <span class="string">'ko'</span>)
+<span class="keyword">end</span>
+
+legend(<span class="string">'cos(2x)'</span>, <span class="string">'sin(x/2)'</span>);
+</pre><img vspace="5" hspace="5" src="Viikko10_01.png" alt=""> <h2 id="2">Teht&auml;v&auml; 2</h2><pre class="codeinput">clc;clear;close <span class="string">all</span>
+<span class="comment">% pinnan piirt&auml;minen</span>
+[X,Y] = meshgrid(-3:.1:3); <span class="comment">% m&auml;&auml;ritet&auml;&auml;n muuttujien rajat</span>
+F = @(X,Y) (X+1).^2.*exp(1-X.^2-Y.^2);
+
+figure(1);
+mesh(X, Y, F(X,Y));
+xlabel(<span class="string">'x'</span>);
+ylabel(<span class="string">'y'</span>);
+zlabel(<span class="string">'z'</span>);
+
+<span class="comment">% xy-tason ympyr&auml;n piirt&auml;minen pinnalle</span>
+t = 0:.01:2*pi;
+x = sin(t) + 1/2;
+y = cos(t) - 1;
+z = F(x,y); <span class="comment">% ympyr&auml;n asettaminen funktion pinnalle</span>
+
+hold <span class="string">on</span>
+plot3(x, y, z, Color=<span class="string">'red'</span>, LineWidth=2); <span class="comment">% LineWidth suuremmaksi ja v&auml;ri vaihtoon,</span>
+<span class="comment">% erottuu helpommin</span>
+
+<span class="comment">% vektorit kukkulan huipulle,</span>
+<span class="comment">% kukkulan huipun arvot teht&auml;v&auml;nannosta</span>
+x1 = 0.6180;
+y1 = 0;
+
+quiver3(x1, y1, F(x1,y1), 0, 0 ,2); <span class="comment">% z-suuntaan</span>
+quiver3(x1, y1, F(x1,y1), 2, 1 ,0); <span class="comment">% xy-suuntaan</span>
+legend(<span class="string">'pinta'</span>, <span class="string">'ympyr&auml;'</span>, <span class="string">'z-suuntaan vektori'</span>, <span class="string">'xy-suuntaan vektori'</span>);
+</pre><img vspace="5" hspace="5" src="Viikko10_02.png" alt=""> <h2 id="3">Teht&auml;v&auml; 3</h2><p>Maclaurin sarjakehitelm&auml;n demoaminen.</p><pre class="codeinput">clc;close <span class="string">all</span>;clear
+<span class="comment">% funktioiden m&auml;&auml;rittely</span>
+F3 = @(x) exp(x);
+F31 = @(x) 1 + x;
+F32 = @(x) 1 + x + x.^2 / 2;
+F33 = @(x) 1 + x + x.^2 / 2 + x.^3 / 6;
+ax =[-1 1];
+
+figure(1);
+hold <span class="string">on</span>;
+legend;
+
+fplot(F3, ax); <span class="comment">% funktio nollan ymp&auml;rill&auml;</span>
+fplot(F31, ax); <span class="comment">% 1. asteen sarjakehitelm&auml;</span>
+fplot(F32, ax); <span class="comment">% 2.asteen sarjakehitelm&auml;</span>
+fplot(F33, ax); <span class="comment">% 3. asteen sarjakehitelm&auml;</span>
+
+<span class="comment">% funktioiden arvot pisteess&auml; 0.3</span>
+alkup = F3(0.3) <span class="comment">% alkup. funktio</span>
+aste1 = F31(0.3) <span class="comment">% 1.aste</span>
+aste2 = F32(0.3) <span class="comment">% 2.aste</span>
+aste3 = F33(0.3) <span class="comment">% 3.aste</span>
+</pre><pre class="codeoutput">
+alkup =
+
+    1.3499
+
+
+aste1 =
+
+    1.3000
+
+
+aste2 =
+
+    1.3450
+
+
+aste3 =
+
+    1.3495
+
+</pre><img vspace="5" hspace="5" src="Viikko10_03.png" alt=""> <h2 id="4">Teht&auml;v&auml; 4</h2><p>pysty- ja vaakavektoreiden yhteenlaskua ja kokeilua.</p><pre class="codeinput">clc;clear
+<span class="comment">% pystyvektorit</span>
+v1 = [1;2;3];
+v2 = [2;3;1];
+vp = v1+v2
+
+<span class="comment">% vaakavektorit</span>
+v3 = [1,2,3];
+v4 = [2,3,1];
+vv = v3+v4
+
+<span class="comment">% 1. vaaka, 2. pysty</span>
+vvp = v4+v2
+
+<span class="comment">% 1. pysty, 2. vaaka</span>
+vpv = v1+v3
+<span class="comment">% Matlab laskee yhteen 1. vektorin jokaisen alkion 2.</span>
+<span class="comment">% vektorin kanssa ja palauttaa NxM matriisin, jonka koko riippuu yhteenlas</span>
+<span class="comment">% kettavien vektorien dimensioista.</span>
+</pre><pre class="codeoutput">
+vp =
+
+     3
+     5
+     4
+
+
+vv =
+
+     3     5     4
+
+
+vvp =
+
+     4     5     3
+     5     6     4
+     3     4     2
+
+
+vpv =
+
+     2     3     4
+     3     4     5
+     4     5     6
+
+</pre><h2 id="5">Teht&auml;v&auml; 5</h2><pre class="codeinput">clc;clear;close <span class="string">all</span>
+
+f = @(x) sin(x);
+g = @(x) cos(2*x);
+h = @(x) cos(3*x);
+
+fun = @(x) [f(x);g(x);h(x)]; <span class="comment">% fun m&auml;&auml;ritys</span>
+
+<span class="comment">% esimerkkik&auml;sky</span>
+v = fun(pi)
+
+w = fun(0)
+</pre><pre class="codeoutput">
+v =
+
+    0.0000
+    1.0000
+   -1.0000
+
+
+w =
+
+     0
+     1
+     1
+
+</pre><h2 id="6">Teht&auml;v&auml; 6</h2><p>Matlabin omien funktioiden muodostamista ja k&auml;ytt&auml;mist&auml;.</p><pre class="codeinput">clc;clear;close <span class="string">all</span>
+<span class="comment">% vektorien alkioiden summan laskeminen itse tehdyn funktion avulla</span>
+v = 1:5;
+S = teht1(v)
+
+<span class="comment">% kahden sy&ouml;tetyn summan peruslaskutoimitukset funktion avulla</span>
+[ero, summa, tulo, osam] = teht2(2,3)
+
+<span class="comment">% luvun etumerkin tarkistaminen funktion avulla</span>
+merkki1 = teht3(3) <span class="comment">% palauttaa plus</span>
+merkki2 = teht3(0) <span class="comment">% palauttaa nolla</span>
+merkki3 = teht3(-955) <span class="comment">% palauttaa miinus</span>
+
+<span class="comment">% vektorin negatiivisten ja positiivisten alkioiden erillinen yhteenalasku.</span>
+v1 = [-1 2 3 -4 0];
+v2 = [2 3 -42 10 -9];
+
+<span class="comment">% M = miinusmerkkiset ja P = plusmerkkiset</span>
+[M1, P1] = teht4(v1)
+[M2, P2] = teht4(v2)
+</pre><pre class="codeoutput">
+S =
+
+    15
+
+
+ero =
+
+    -1
+
+
+summa =
+
+     5
+
+
+tulo =
+
+     6
+
+
+osam =
+
+    0.6667
+
+
+merkki1 =
+
+    'plus'
+
+
+merkki2 =
+
+    'nolla'
+
+
+merkki3 =
+
+    'miinus'
+
+
+M1 =
+
+    -5
+
+
+P1 =
+
+     5
+
+
+M2 =
+
+   -51
+
+
+P2 =
+
+    15
+
+</pre><h2 id="7">Teht&auml;v&auml; 6 funktiot</h2><p>Alla teht&auml;v&auml;ss&auml; 6 k&auml;ytetyt funktiotiedostot 1-4.</p><pre class="language-matlab">
+<span class="keyword">function</span> [summa] = teht1(vektori)
+<span class="comment">% Funktio [summa] = teht1(vektori) laskee sille sy&ouml;tetyn vektorin</span>
+<span class="comment">% alkioiden summan.</span>
+pituus = length(vektori);
+summa = 0;
+
+<span class="keyword">for</span> i = 1:pituus
+    summa = summa + vektori(i);
+<span class="keyword">end</span>
+<span class="keyword">end</span>
+
+</pre><pre class="language-matlab">
+<span class="keyword">function</span> [ero, summa, tulo, os] = teht2(luku1, luku2)
+<span class="comment">% Funktio [ero, summa, tulo, os] = teht2(luku1, luku2) laskee</span>
+<span class="comment">% kahden luvun v&auml;liset peruslaskutoimitukset.</span>
+
+<span class="comment">% erotus</span>
+ero = luku1 - luku2;
+
+<span class="comment">% summa</span>
+summa = luku1 + luku2;
+
+<span class="comment">% tulo</span>
+tulo = luku1 * luku2;
+
+<span class="comment">% osam&auml;&auml;r&auml;</span>
+os = luku1/luku2;
+<span class="keyword">end</span>
+
+</pre><pre class="language-matlab">
+<span class="keyword">function</span> [teksti] = teht3(luku)
+<span class="comment">% Funktio [] = teht3(luku) palauttaa tekstin riippuen sy&ouml;tetyn </span>
+<span class="comment">% luvun etumerkist&auml;.</span>
+
+<span class="keyword">if</span> luku == 0
+    teksti = <span class="string">'nolla'</span>;
+<span class="keyword">elseif</span> luku &lt; 0
+    teksti = <span class="string">'miinus'</span>;
+<span class="keyword">elseif</span> luku &gt; 0
+    teksti = <span class="string">'plus'</span>;
+<span class="keyword">end</span>
+<span class="keyword">end</span>
+
+</pre><pre class="language-matlab">
+<span class="keyword">function</span> [summaneg, summapos] = teht4(vektori)
+<span class="comment">% Funktio [summa] = teht4(vektori) laskee sille sy&ouml;tetyn vektorin</span>
+<span class="comment">% alkioiden negatiivisten ja positiivisten alkioiden summat.</span>
+pituus = length(vektori);
+summaneg = 0;
+summapos = 0;
+
+<span class="keyword">for</span> i = 1:pituus
+    <span class="keyword">if</span> vektori(i) &gt; 0
+        summapos = summapos + vektori(i);
+    <span class="keyword">elseif</span> vektori(i) &lt; 0
+        summaneg = summaneg + vektori(i);
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">end</span>
+
+</pre><h2 id="8">Teht&auml;v&auml; 7</h2><p>f(x) funktion arvot ovat sen verran l&auml;hell&auml; nollaa, jolloin MatLabin py&ouml;ristyserot aiheuttavat sen, ett&auml; kuvaja on erin&auml;k&ouml;inen g(x) verrattuna.</p><pre class="codeinput">clc;clear;close <span class="string">all</span>
+x = linspace(-5*10^(-8), 5*10^(-8), 1001);
+f = @(x) 1-cosh(x);
+g = @(x) -2*(sinh(x./2)).^2;
+
+
+
+figure(1);
+plot(x, f(x));
+hold <span class="string">on</span>
+plot(x, g(x));
+legend(<span class="string">'1-cosh(x)'</span>, <span class="string">'-2(sinh(x/2)^2'</span>);
+</pre><img vspace="5" hspace="5" src="Viikko10_04.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2021b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Viikko 10 tehtävät
+% * Harjoitus 1
+% * Arno Törö
+% 
+
+%% Tehtävä 1
+% Piirretään funktiot 
+%
+% $cos(2x)$ ja $sin(x/2)$
+%
+% samaan kuvaan eri väreillä.
+% Käytetään for-looppia luomaan käyrille merkkejä haluttuihin kohtiin.
+clc;clear;close all
+% a.) kohta
+
+% määritetään funktiot ja x
+x = -6*pi:.1:4*pi; 
+y1 = cos(2*x); 
+y2 = sin(x/2);
+
+figure(1);
+
+hold on;
+plot(x, y1);
+plot(x, y2);
+
+% b.) kohta
+for x = -18:12
+    plot(x, cos(2*x), 'r*');
+    plot(x, sin(x/2), 'ko')
+end
+
+legend('cos(2x)', 'sin(x/2)');
+%% Tehtävä 2
+clc;clear;close all
+% pinnan piirtäminen
+[X,Y] = meshgrid(-3:.1:3); % määritetään muuttujien rajat
+F = @(X,Y) (X+1).^2.*exp(1-X.^2-Y.^2); 
+
+figure(1);
+mesh(X, Y, F(X,Y));
+xlabel('x');
+ylabel('y');
+zlabel('z');
+
+% xy-tason ympyrän piirtäminen pinnalle
+t = 0:.01:2*pi;
+x = sin(t) + 1/2;
+y = cos(t) - 1;
+z = F(x,y); % ympyrän asettaminen funktion pinnalle
+
+hold on
+plot3(x, y, z, Color='red', LineWidth=2); % LineWidth suuremmaksi ja väri vaihtoon,
+% erottuu helpommin
+
+% vektorit kukkulan huipulle,
+% kukkulan huipun arvot tehtävänannosta
+x1 = 0.6180;
+y1 = 0;
+
+quiver3(x1, y1, F(x1,y1), 0, 0 ,2); % z-suuntaan
+quiver3(x1, y1, F(x1,y1), 2, 1 ,0); % xy-suuntaan 
+legend('pinta', 'ympyrä', 'z-suuntaan vektori', 'xy-suuntaan vektori');
+
+%% Tehtävä 3
+% Maclaurin sarjakehitelmän demoaminen.
+% 
+clc;close all;clear
+% funktioiden määrittely
+F3 = @(x) exp(x);
+F31 = @(x) 1 + x;
+F32 = @(x) 1 + x + x.^2 / 2;
+F33 = @(x) 1 + x + x.^2 / 2 + x.^3 / 6;
+ax =[-1 1];
+
+figure(1);
+hold on;
+legend;
+
+fplot(F3, ax); % funktio nollan ympärillä
+fplot(F31, ax); % 1. asteen sarjakehitelmä
+fplot(F32, ax); % 2.asteen sarjakehitelmä
+fplot(F33, ax); % 3. asteen sarjakehitelmä
+
+% funktioiden arvot pisteessä 0.3
+alkup = F3(0.3) % alkup. funktio
+aste1 = F31(0.3) % 1.aste
+aste2 = F32(0.3) % 2.aste
+aste3 = F33(0.3) % 3.aste
+
+%% Tehtävä 4
+% pysty- ja vaakavektoreiden yhteenlaskua ja kokeilua.
+% 
+clc;clear
+% pystyvektorit
+v1 = [1;2;3];
+v2 = [2;3;1];
+vp = v1+v2
+
+% vaakavektorit
+v3 = [1,2,3];
+v4 = [2,3,1];
+vv = v3+v4
+
+% 1. vaaka, 2. pysty
+vvp = v4+v2
+
+% 1. pysty, 2. vaaka
+vpv = v1+v3 
+% Matlab laskee yhteen 1. vektorin jokaisen alkion 2.
+% vektorin kanssa ja palauttaa NxM matriisin, jonka koko riippuu yhteenlas
+% kettavien vektorien dimensioista.
+
+%% Tehtävä 5
+clc;clear;close all
+
+f = @(x) sin(x);
+g = @(x) cos(2*x);
+h = @(x) cos(3*x);
+
+fun = @(x) [f(x);g(x);h(x)]; % fun määritys
+
+% esimerkkikäsky
+v = fun(pi)
+
+w = fun(0)
+
+%% Tehtävä 6
+% Matlabin omien funktioiden muodostamista ja käyttämistä.
+clc;clear;close all
+% vektorien alkioiden summan laskeminen itse tehdyn funktion avulla
+v = 1:5;
+S = teht1(v)
+
+% kahden syötetyn summan peruslaskutoimitukset funktion avulla
+[ero, summa, tulo, osam] = teht2(2,3)
+
+% luvun etumerkin tarkistaminen funktion avulla
+merkki1 = teht3(3) % palauttaa plus
+merkki2 = teht3(0) % palauttaa nolla
+merkki3 = teht3(-955) % palauttaa miinus
+
+% vektorin negatiivisten ja positiivisten alkioiden erillinen yhteenalasku.
+v1 = [-1 2 3 -4 0];
+v2 = [2 3 -42 10 -9];
+
+% M = miinusmerkkiset ja P = plusmerkkiset
+[M1, P1] = teht4(v1)
+[M2, P2] = teht4(v2)
+
+%% Tehtävä 6 funktiot
+% Alla tehtävässä 6 käytetyt funktiotiedostot 1-4.
+% 
+% <include>teht1.m</include>
+%
+% 
+% <include>teht2.m</include>
+%
+% 
+% <include>teht3.m</include>
+%
+% 
+% <include>teht4.m</include>
+%
+
+%% Tehtävä 7
+% f(x) funktion arvot ovat sen verran lähellä nollaa, jolloin MatLabin
+% pyöristyserot aiheuttavat sen, että kuvaja on erinäköinen g(x)
+% verrattuna.
+clc;clear;close all
+x = linspace(-5*10^(-8), 5*10^(-8), 1001);
+f = @(x) 1-cosh(x);
+g = @(x) -2*(sinh(x./2)).^2;
+
+
+
+figure(1);
+plot(x, f(x));
+hold on
+plot(x, g(x));
+legend('1-cosh(x)', '-2(sinh(x/2)^2');
+##### SOURCE END #####
+--></body></html>

@@ -1,0 +1,359 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Viikko 12 teht&auml;v&auml;t</title><meta name="generator" content="MATLAB 9.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2022-03-26"><meta name="DC.source" content="Viikko12perus.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Viikko 12 teht&auml;v&auml;t</h1><!--introduction--><div><ul><li>Harjoitus 3 perusteht&auml;v&auml;t</li><li>Arno T&ouml;r&ouml;</li></ul></div><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Teht&auml;v&auml; 1</a></li><li><a href="#3">Teht&auml;v&auml; 1b</a></li><li><a href="#4">Teht&auml;v&auml; 2</a></li></ul></div><h2 id="1">Teht&auml;v&auml; 1</h2><pre class="codeinput">clc;clear;close <span class="string">all</span>
+f = @(x) -x.*cosh(x)+x.*sinh(x)+sin(x); <span class="comment">% funktion m&auml;&auml;rittely</span>
+x = -1:.1:4;
+y = zeros(length(x)); <span class="comment">% y:n arvot y=0 suoran piirt&auml;miseen eli x-akseli</span>
+
+<span class="comment">% derivaatta numeerisesti</span>
+h = sqrt(eps);
+df = @(a) (f(a+h)-f(a))/h;
+
+<span class="comment">% eri aloitusarvoja nollakohdan etsint&auml;&auml;n</span>
+
+<span class="comment">% alkuarvo x0 = 1</span>
+<span class="comment">% funktion ja x-akselin piirto</span>
+figure(1);
+plot(x,f(x)); grid <span class="string">on</span>; hold <span class="string">on</span>
+yline(0,<span class="string">'k-.'</span>)
+
+x0 = 1;
+x1 = 0;
+error = 100;
+count = 0;
+plot(x0,f(x0),<span class="string">'o'</span>)
+
+<span class="keyword">while</span> error &gt;= 0.001 &amp;&amp; count &lt; 100
+    x1 = x0 - f(x0)/df(x0);
+    error = abs(x1-x0);
+    x0 = x1;
+    count = count + 1;
+<span class="keyword">end</span>
+
+result1 = x1
+plot(result1,0,<span class="string">'o'</span>);
+title(<span class="string">'Nollakohdan etsint&auml; alkuarvolla x0 = 1'</span>)
+legend(<span class="string">'funktio'</span>,<span class="string">'x-akseli'</span>,<span class="string">'alkuarvaus'</span>,<span class="string">'laskettu nollakohta'</span>)
+
+<span class="comment">% alkuarvo x0 = 4</span>
+figure(2);
+plot(x,f(x)); grid <span class="string">on</span>; hold <span class="string">on</span>
+yline(0,<span class="string">'k-.'</span>)
+
+x0 = 4;
+x2 = 0;
+error = 100;
+count = 0;
+plot(x0,f(x0),<span class="string">'o'</span>)
+
+<span class="keyword">while</span> error &gt;= 0.001 &amp;&amp; count &lt; 100
+    x2 = x0 - f(x0)/df(x0);
+    error = abs(x2-x0);
+    x0 = x2;
+    count = count + 1;
+<span class="keyword">end</span>
+
+result2 = x2
+plot(result1,0,<span class="string">'o'</span>);
+title(<span class="string">'Nollakohdan etsint&auml; alkuarvolla x0 = 4'</span>)
+legend(<span class="string">'funktio'</span>,<span class="string">'x-akseli'</span>,<span class="string">'alkuarvaus'</span>,<span class="string">'laskettu nollakohta'</span>)
+
+<span class="comment">% alkuarvo x0 = 2</span>
+figure(3);
+plot(x,f(x)); grid <span class="string">on</span>; hold <span class="string">on</span>
+yline(0,<span class="string">'k-.'</span>)
+
+x0 = 2;
+x3 = 0;
+error = 100;
+count = 0;
+plot(x0,f(x0),<span class="string">'o'</span>)
+
+<span class="keyword">while</span> error &gt;= 0.001 &amp;&amp; count &lt; 100
+    x3 = x0 - f(x0)/df(x0);
+    error = abs(x3-x0);
+    x0 = x3;
+    count = count + 1;
+<span class="keyword">end</span>
+
+result3 = x3
+plot(result3,0,<span class="string">'o'</span>);
+title(<span class="string">'Nollakohdan etsint&auml; alkuarvolla x0 = 2'</span>)
+legend(<span class="string">'funktio'</span>,<span class="string">'x-akseli'</span>,<span class="string">'alkuarvaus'</span>,<span class="string">'laskettu nollakohta'</span>)
+</pre><pre class="codeoutput">
+result1 =
+
+   8.8672e-04
+
+
+result2 =
+
+    2.9907
+
+
+result3 =
+
+   28.2743
+
+</pre><img vspace="5" hspace="5" src="Viikko12perus_01.png" alt=""> <img vspace="5" hspace="5" src="Viikko12perus_02.png" alt=""> <img vspace="5" hspace="5" src="Viikko12perus_03.png" alt=""> <pre>x0 = 2 alkuarvolla nollakohta siirtyy v&auml;lin ulkopuolelle. Eri
+alkuarvauksilla voidaan p&auml;&auml;ty&auml; kauas l&auml;himm&auml;st&auml; nollakohdasta,
+jos jokin iteraatio p&auml;&auml;tyy funktiossa olevan kukkulan huipulle jolloin
+derivaatan arvo l&auml;henee nollaa ja tangentti loivenee. Tangentin
+nollakohta ja seuraava iteraatio n&auml;in siirtyy kauemmas arvauksesta.</pre><h2 id="3">Teht&auml;v&auml; 1b</h2><p>Silm&auml;m&auml;&auml;r&auml;isesti kokeilemalla kaikki alkuarvot v&auml;ill&auml; [-1, 1.69] johtavat kohdassa x = 0 nollakohdan l&ouml;yt&auml;miseen.</p><pre class="codeinput">nollavali = abs(-1-1.69);
+kokovali = abs(-1-4);
+
+todnk = (nollavali/kokovali)*100
+<span class="comment">% todenn&auml;k&ouml;isyys l&ouml;yt&auml;&auml; x = 0 nollakohta, kun alkuarvaus ammutaan satunnaisesti v&auml;lille.</span>
+</pre><pre class="codeoutput">
+todnk =
+
+   53.8000
+
+</pre><h2 id="4">Teht&auml;v&auml; 2</h2><pre class="codeinput">clc;clear;close <span class="string">all</span>
+
+f1 = @(x) abs((2 + x + cos(x))./(x.^2 + 0.1*x +3));
+f2 = @(x) (2 + x + cos(x))./(x.^2 + 0.1*x + 3);
+
+a = -1; <span class="comment">% raja-arvo</span>
+fun = @(x) f1(x).*(x&lt;=a) + f2(x).*(x&gt;a);
+
+
+
+x = -5:0.1:5;
+x0 = -5:5;
+
+[minimikohta, minimiarvo] = fminsearch(@(x) fun(x), 0) <span class="comment">% minimikohta ja -arvo aloituskohdasta x0</span>
+[maksimikohta, neg_maksimiarvo] = fminsearch(@(x) -fun(x), 0)
+<span class="comment">% maksimikohta saadaan minimoimalla vastakkaissuuntaisesta funktiosta eli</span>
+<span class="comment">% g(x) = -f(x).</span>
+
+maksimiarvo = -(neg_maksimiarvo)
+</pre><pre class="codeoutput">
+minimikohta =
+
+   -1.7863
+
+
+minimiarvo =
+
+   6.7588e-06
+
+
+maksimikohta =
+
+    0.2915
+
+
+neg_maksimiarvo =
+
+   -1.0434
+
+
+maksimiarvo =
+
+    1.0434
+
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2021b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Viikko 12 tehtävät
+% * Harjoitus 3 perustehtävät
+% * Arno Törö
+%  
+
+%% Tehtävä 1
+clc;clear;close all
+f = @(x) -x.*cosh(x)+x.*sinh(x)+sin(x); % funktion määrittely
+x = -1:.1:4;
+y = zeros(length(x)); % y:n arvot y=0 suoran piirtämiseen eli x-akseli
+
+% derivaatta numeerisesti
+h = sqrt(eps);
+df = @(a) (f(a+h)-f(a))/h; 
+
+% eri aloitusarvoja nollakohdan etsintään
+
+% alkuarvo x0 = 1
+% funktion ja x-akselin piirto
+figure(1);
+plot(x,f(x)); grid on; hold on
+yline(0,'k-.')
+
+x0 = 1;
+x1 = 0;
+error = 100;
+count = 0;
+plot(x0,f(x0),'o')
+
+while error >= 0.001 && count < 100
+    x1 = x0 - f(x0)/df(x0);
+    error = abs(x1-x0);
+    x0 = x1;
+    count = count + 1;
+end
+
+result1 = x1
+plot(result1,0,'o');
+title('Nollakohdan etsintä alkuarvolla x0 = 1')
+legend('funktio','x-akseli','alkuarvaus','laskettu nollakohta')
+
+% alkuarvo x0 = 4
+figure(2);
+plot(x,f(x)); grid on; hold on
+yline(0,'k-.')
+
+x0 = 4;
+x2 = 0;
+error = 100;
+count = 0;
+plot(x0,f(x0),'o')
+
+while error >= 0.001 && count < 100
+    x2 = x0 - f(x0)/df(x0);
+    error = abs(x2-x0);
+    x0 = x2;
+    count = count + 1;
+end
+
+result2 = x2
+plot(result1,0,'o');
+title('Nollakohdan etsintä alkuarvolla x0 = 4')
+legend('funktio','x-akseli','alkuarvaus','laskettu nollakohta')
+
+% alkuarvo x0 = 2
+figure(3);
+plot(x,f(x)); grid on; hold on
+yline(0,'k-.')
+
+x0 = 2;
+x3 = 0;
+error = 100;
+count = 0;
+plot(x0,f(x0),'o')
+
+while error >= 0.001 && count < 100
+    x3 = x0 - f(x0)/df(x0);
+    error = abs(x3-x0);
+    x0 = x3;
+    count = count + 1;
+end
+
+result3 = x3
+plot(result3,0,'o');
+title('Nollakohdan etsintä alkuarvolla x0 = 2')
+legend('funktio','x-akseli','alkuarvaus','laskettu nollakohta')
+
+
+%%
+% 
+%  x0 = 2 alkuarvolla nollakohta siirtyy välin ulkopuolelle. Eri
+%  alkuarvauksilla voidaan päätyä kauas lähimmästä nollakohdasta,
+%  jos jokin iteraatio päätyy funktiossa olevan kukkulan huipulle jolloin
+%  derivaatan arvo lähenee nollaa ja tangentti loivenee. Tangentin
+%  nollakohta ja seuraava iteraatio näin siirtyy kauemmas arvauksesta.
+
+%% Tehtävä 1b
+% 
+% Silmämääräisesti kokeilemalla kaikki alkuarvot väillä [-1, 1.69] johtavat
+% kohdassa x = 0 nollakohdan löytämiseen.
+%
+
+nollavali = abs(-1-1.69);
+kokovali = abs(-1-4);
+
+todnk = (nollavali/kokovali)*100 
+% todennäköisyys löytää x = 0 nollakohta, kun alkuarvaus ammutaan satunnaisesti välille.
+
+
+%% Tehtävä 2
+clc;clear;close all
+
+f1 = @(x) abs((2 + x + cos(x))./(x.^2 + 0.1*x +3));
+f2 = @(x) (2 + x + cos(x))./(x.^2 + 0.1*x + 3);
+
+a = -1; % raja-arvo
+fun = @(x) f1(x).*(x<=a) + f2(x).*(x>a);
+
+
+
+x = -5:0.1:5;
+x0 = -5:5;
+
+[minimikohta, minimiarvo] = fminsearch(@(x) fun(x), 0) % minimikohta ja -arvo aloituskohdasta x0
+[maksimikohta, neg_maksimiarvo] = fminsearch(@(x) -fun(x), 0)
+% maksimikohta saadaan minimoimalla vastakkaissuuntaisesta funktiosta eli
+% g(x) = -f(x). 
+
+maksimiarvo = -(neg_maksimiarvo)
+
+
+
+
+##### SOURCE END #####
+--></body></html>
